@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/donatestyles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- J-query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar nav">
+            <div class="home">
+                <stroke>Kajli</stroke><label>Mela</label>
+            </div>
+            <div class="nav-op">
+                <h4><a href="index.html"><i class="glyphicon fa-home fas" style="color:#ffff; font-weight: 800;"></i></a></h4>
+                <div>
+                    <h4><a href="about.html">About Kajli</a>
+                        <div class="h4-animate"></div>
+                    </h4>
+                </div>
+
+                <h4><a href="#gallary">Gallery</a></h4>
+                <h4><a href="#contactus">Contact Us</a></h4>
+                <h4><a href="Donation.html">Donation</a></h4>
+
+            </div>
+            <div class="social-media-icon">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter "></i>
+                <i class="fa-brands  fa-youtube "></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="donate-info">
+
+            <div id="box">
+                <div id="title">
+                    <p id="box-title">DONATE TODAY</p>
+                </div>
+
+                <div id="input-username" class="namesec">
+                    <p id="input-title">Full Name:</p>
+                    <input type=text placeholder="Name (First Last)"></input><br>
+                </div>
+                <div id="input-address">
+                    <p id="input-title">Address:</p>
+                    <input type=text placeholder="address"></input>
+
+                </div>
+                <div id=" input-username">
+                    <p id="input-title">Phone Number:</p>
+                    <input type=text placeholder="(###) ###-####"></input>
+                </div>
+                <div id="input-username">
+                    <p id="input-title">Email:</p>
+                    <input type=text placeholder="Email"></input>
+                </div>
+
+                <div id="input-username">
+                    <p id="input-title">Payment Information:</p>
+                    <input type=text placeholder="Card Number (#### #### #### ####)"></input><br><input type=text
+                        placeholder="Name on Card"></input><br><input type=text placeholder="CVC"></input>
+                </div>
+
+
+                <br>
+                <div class="p2">AMOUNT:</div>
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+                <center><button class="button">$10</button>
+                    <button class="button button">$25</button>
+                    <button class="button button">$50</button>
+                    <button class="button button">$100</button><br><br>
+                </center>
+
+
+
+
+                <div id="sbutton" onclick="showPopUp()">SUBMIT</div>
+                <br>
+                <br>
+                <div id="pop-up" onclick="closePopUp()">
+                    THANK YOU
+                    </br>
+                    for your donation!<br>
+                    <font size="2">(click to close)</font>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-------footer----->
+        <footer>
+
+            <div class="footer">
+                <div class="footer-cantainer">
+
+                    <div class="footer-col-2">
+                        <div class="footer-col-3">
+                            <h3>
+                                <a href="#">IMPORTANT LINKS</a>
+                            </h3>
+                            <ul>
+                                <li>Lost and found</li>
+                                <li>incredible india</li>
+                                <li>one stop Travel Solution Portal</li>
+                                <li>Ministry of Torism India</li>
+                                <li>Documentaries</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>
+                                <a href="#">VISITOR SERVICES</a>
+                            </h3>
+                            <ul>
+                                <li>Emerngency Services</li>
+                                <li>FAQ</li>
+                                <li>Do's and Don's</li>
+                                <li>Mahoba mape</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-5 ">
+                            <h3>
+                                <a href="#">WHAT'S NEW</a>
+                            </h3>
+                            <ul>
+                                <li>Tender</li>
+                                <li>Download</li>
+                                <li>Key Announcements</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-6">
+                            <h3>
+                                <a href="#">EMERNGENCY CONTACT</a>
+                            </h3>
+                            <ul>
+                                <li>kajli helpline Number-1098</li>
+                                <li>Women and Child helpline-1920</li>
+                                <li>Ambulance-108</li>
+                                <li>Police-100</li>
+                                <li>Fir-101</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright"> Privacy Policy | Teams of Use | Disclaimer | Accesibility</p><br>
+                    <p class="copyright">Copyrght &copy; 2024 Mahoba Kjli Mela Pradhikaran.All Rights Reserved.Hosted by
+                        Mahoba Mela Pradhikaran.The official Website of Kajli</p>
+                </div>
+            </div>
+        </footer>
+    <script>
+        $('button').on('click', function () {
+            $('button').removeClass('selected');
+            $(this).addClass('selected');
+        });
+
+        function showPopUp() {
+            document.getElementById('pop-up').setAttribute("style", "display: block;")
+        }
+
+        function closePopUp() {
+            document.getElementById('pop-up').setAttribute("style", "display: none;")
+        }
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar nav">
+            <div class="home">
+                <stroke>Kajli</stroke><label>Mela</label>
+            </div>
+            <div class="nav-op">
+                <h4><a href="index.html"><i class="glyphicon fa-home fas"
+                            style="color:#ffff; font-weight: 800;"></i></a></h4>
+                <div>
+                    <h4><a href="about.html">About Kajli</a>
+                        <div class="h4-animate"></div>
+                    </h4>
+                </div>
+
+                <h4><a href="#gallary">Gallery</a></h4>
+                <h4><a href="#contactus">Contact Us</a></h4>
+                <h4><a href="Donation.html">Donation</a></h4>
+
+            </div>
+            <div class="social-media-icon">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter "></i>
+                <i class="fa-brands  fa-youtube "></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="heading">
+            <h1>About Kajli</h1>
+        </div>
+        <div class="container-about">
+            <div class="hero-content">
+                <h2>Welcome To Our District</h2>
+                <p>MAHOBA A small district in Uttar Pradesh is famous for it’s glorious history. It is known for its
+                    bravery. The stories Of Veer ALHA and UDAL defines its importance in Indian history. There are
+                    various Places which can create live glorious Moment of that previous time. Mahoba is a city located
+                    in the Indian state of Uttar Pradesh, in the Bundelkhand region. Mahoba is known for its closeness
+                    to Khajuraho, Laundi and other historic places like Kulpahar, Charkhari, Kalinjar, Orchha, and
+                    Jhansi. The name Mahoba is derived from Mahotsav Nagar, the city of great festivals. The Bardic
+                    tradition preserves three other names of the city: Kekaipur, Patanpur and Ratanpur. The existence of
+                    the sacred Ram-Kund and Seeta-Rasoi cave at the Gokhar hill here are said to be monumental to the
+                    visit of Rama who widely treated this hilly region while in 14-year exile at Chitrakoot.</p>
+                <button class="cta-button"><a href="https://mahoba.nic.in/history/"
+                        style="text-decoration: none ; color: #fff;"> Learn more</a></button>
+            </div>
+            <div class="hero-image">
+                <img src="images/kajli-mela-mahoba.jpg" height="350px">
+            </div>
+        </div>
+    </section>
+            <!-------footer----->
+            <footer>
+
+                <div class="footer">
+                    <div class="footer-cantainer">
+    
+                        <div class="footer-col-2">
+                            <div class="footer-col-3">
+                                <h3>
+                                    <a href="#">IMPORTANT LINKS</a>
+                                </h3>
+                                <ul>
+                                    <li>Lost and found</li>
+                                    <li>incredible india</li>
+                                    <li>one stop Travel Solution Portal</li>
+                                    <li>Ministry of Torism India</li>
+                                    <li>Documentaries</li>
+                                </ul>
+                            </div>
+                            <div class="footer-col-4">
+                                <h3>
+                                    <a href="#">VISITOR SERVICES</a>
+                                </h3>
+                                <ul>
+                                    <li>Emerngency Services</li>
+                                    <li>FAQ</li>
+                                    <li>Do's and Don's</li>
+                                    <li>Mahoba mape</li>
+                                </ul>
+                            </div>
+                            <div class="footer-col-5 ">
+                                <h3>
+                                    <a href="#">WHAT'S NEW</a>
+                                </h3>
+                                <ul>
+                                    <li>Tender</li>
+                                    <li>Download</li>
+                                    <li>Key Announcements</li>
+                                </ul>
+                            </div>
+                            <div class="footer-col-6">
+                                <h3>
+                                    <a href="#">EMERNGENCY CONTACT</a>
+                                </h3>
+                                <ul>
+                                    <li>kajli helpline Number-1098</li>
+                                    <li>Women and Child helpline-1920</li>
+                                    <li>Ambulance-108</li>
+                                    <li>Police-100</li>
+                                    <li>Fir-101</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="copyright"> Privacy Policy | Teams of Use | Disclaimer | Accesibility</p><br>
+                        <p class="copyright">Copyrght &copy; 2024 Mahoba Kjli Mela Pradhikaran.All Rights Reserved.Hosted by
+                            Mahoba Mela Pradhikaran.The official Website of Kajli</p>
+                    </div>
+                </div>
+            </footer>
+    <script>
+         $(document).ready(function () {
+                $(window).bind('scroll', function () {
+                    var navHeight = 61;
+                    console.log($(window).height())
+                    console.log(navHeight)
+                    if ($(window).scrollTop() > navHeight) {
+                        $('nav').addClass('fixed');
+                    }
+                    else {
+                        $('nav').removeClass('fixed');
+                    }
+                });
+               
+               
+            });
+            
+    </script>
+
+
+</body>
+
+</html>
