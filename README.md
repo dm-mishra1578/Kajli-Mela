@@ -24,7 +24,7 @@ A frontend website for the Kajli Mela festival, showcasing event details, schedu
 ### Steps
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/kajli-mela-frontend.git
+    git clone https://github.com/dm-mishra1578/Kajli-Mela.git
     cd kajli-mela-frontend
     ```
 
